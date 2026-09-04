@@ -56,6 +56,7 @@ sed -i -e 's/#define FFMPEG_CONFIGURATION.*/#define FFMPEG_CONFIGURATION ""/' ..
 	--enable-jni \
 	--enable-bsfs \
 	--enable-mediacodec \
+	--enable-libsmb2 \
 	\
 	--disable-dxva2 \
 	--disable-vaapi \
@@ -234,6 +235,7 @@ sed -i -e 's/#define FFMPEG_CONFIGURATION.*/#define FFMPEG_CONFIGURATION ""/' ..
 	--enable-protocol=http \
 	--enable-protocol=httpproxy \
 	--enable-protocol=https \
+	--enable-protocol=libsmb2 \
 	--enable-protocol=pipe \
 	--enable-protocol=rtmp \
 	--enable-protocol=rtmps \

@@ -22,6 +22,7 @@ v_libvorbis=1.3.7
 v_libvpx=1.13.0
 v_libx264=023112c6f2f575c72e9f26274d183b70996fb542
 v_fftools_ffi=10070acb2c090edda86dba431f6c281145ceb221
+v_libsmb2=6.0.0
 v_media_kit_android_helper=b768ce102cfa9b5ddec618bb939d689d1b0899fa
 v_gas_preprocessor=ac1836309c2e77023c228b7184485597286289d3
 
@@ -44,10 +45,11 @@ sha_lcms2=5176347635785e53ee5cee92328f76fda766ecc6
 dep_mbedtls=()
 dep_dav1d=()
 dep_libvorbis=(libogg)
+dep_libsmb2=()
 if [ -n "$ENCODERS_GPL" ]; then
-	dep_ffmpeg=(mbedtls dav1d libxml2 libvorbis libvpx libx264)
+	dep_ffmpeg=(mbedtls dav1d libxml2 libvorbis libvpx libx264 libsmb2)
 else
-	dep_ffmpeg=(mbedtls dav1d libxml2)
+	dep_ffmpeg=(mbedtls dav1d libxml2 libsmb2)
 fi
 dep_freetype2=()
 dep_fribidi=()

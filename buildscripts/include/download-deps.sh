@@ -62,6 +62,11 @@ if [ ! -d ffmpeg ]; then
 fi
 verify_sha ffmpeg $sha_ffmpeg
 
+# libsmb2
+if [ ! -d libsmb2 ]; then
+	git clone --depth 1 --branch v$v_libsmb2 https://github.com/sahlberg/libsmb2.git libsmb2
+fi
+
 # freetype2
 if [ ! -d freetype ]; then
 	git clone --depth 1 --branch VER-$v_freetype https://gitlab.freedesktop.org/freetype/freetype.git freetype
