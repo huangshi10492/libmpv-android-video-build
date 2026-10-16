@@ -43,6 +43,7 @@ loadarch () {
 		echo "Invalid architecture"
 		exit 1
 	fi
+	export android_abi=$prefix_name
 	export prefix_dir="$PWD/prefix/$prefix_name"
 	export native_dir="$PWD/../libmpv/src/main/jniLibs/$prefix_name"
 	export CC=$cc_triple-clang
